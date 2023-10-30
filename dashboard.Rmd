@@ -1,0 +1,139 @@
+---
+title: "dashboard"
+author: "Zhuodiao Kuang"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=TRUE}
+# call relevant packages
+library(p8105.datasets)
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+
+# load relevant dataset
+data("instacart")
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Number of Distinct Orders against Hour of Day, by Day of Week
+
+```{r}
+# create a vector of days of the week
+myDays <- c(
+    "Sunday", "Monday", "Tuesday", "Wednesday"
+  , "Thursday", "Friday", "Saturday"
+)
+
+# create line chart of order volume over course of day for each day of week
+instacart %>%
+  # retain variables unique at the order_id level
+  select(order_id, order_dow, order_hour_of_day) %>%
+  # remove duplicate order IDs
+  distinct() %>%
+  # group by order_dow and order_hour_of_day
+  group_by(order_dow, order_hour_of_day) %>%
+  # count order for each hour and for each day of the week
+  summarize(count = n()) %>%
+  # use myDays vectors to create factor variable
+  mutate(order_dow_fct = factor(myDays[order_dow + 1], levels = myDays)) %>%
+  # output as plotly line chart
+  plot_ly(
+      x      = ~order_hour_of_day
+    , y      = ~count
+    , type   = "scatter"
+    , mode   = "lines+markers"
+    , color  = ~order_dow_fct
+    , colors = "viridis"
+  ) %>%
+  # add meta-data
+  layout(
+      title  = ""
+    , xaxis  = list(title = "Hour of Day", showticklabels = TRUE)
+    , yaxis  = list(title = "Frequency")
+    , legend = list(title=list(text =  "<b> Day of Week </b>"))
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Distribution of Hour of Purchase among Top Five Specialty Wines
+
+```{r}
+# rank wines by purchase volume
+myProducts <-
+  # call data
+  instacart %>%
+  # filter by specialty wines
+  filter(aisle == "specialty wines champagnes") %>%
+  # group by product_name
+  group_by(product_name) %>%
+  # count the wines
+  summarize(n_items_ordered = n()) %>%
+  # order the wines from most popular to least popular
+  arrange(-n_items_ordered) %>%
+  # retain top five aisles by purchase volume
+  filter(row_number() %in% 1:5) %>%
+  # identify top ten wines
+  pull(product_name)
+
+# create box plot of hours of day for each wine of interest
+instacart %>%
+  # filter by wines of interest
+  filter(product_name %in% myProducts) %>%
+  # create factor variable from product_name
+  mutate(product_name = factor(product_name, levels = myProducts)) %>%
+  # output as plotly box plot
+  plot_ly(
+      x      = ~product_name
+    , y      = ~order_hour_of_day
+    , type   = "box"
+    , color  = ~product_name
+    , colors = "viridis"
+  ) %>%
+  # add meta-data
+  layout(
+      title  = ""
+    , xaxis  = list(title = "", showticklabels = FALSE)
+    , yaxis  = list(title = "Hour of Day")
+    , legend = list(title=list(text =  "<b> Specialty Wine </b>"))
+  )
+```
+
+### Top Ten Aisles by Purchase Volume
+
+```{r}
+# rank aisles according to number of items ordered from each aisle
+instacart %>%
+  # group by aisle
+  group_by(aisle) %>%
+  # count the items in each aisle
+  summarize(n_items_ordered = n()) %>%
+  # order the aisles from most popular to least popular
+  arrange(-n_items_ordered) %>%
+  # retain top ten aisles by purchase volume
+  filter(row_number() %in% 1:10) %>%
+  # adjust case of variables for readability
+  mutate(aisle = str_to_title(aisle)) %>%
+  # translate ordering to factor variable
+  mutate(aisle = reorder(factor(aisle), -n_items_ordered)) %>%
+  # output as plotly bar chart
+  plot_ly(
+      x      = ~aisle
+    , y      = ~n_items_ordered
+    , type   = "bar"
+    , color  = ~aisle
+    , colors = "viridis"
+  ) %>%
+  # add meta-data
+  layout(
+      title  = ""
+    , xaxis  = list(title = "", showticklabels = FALSE)
+    , yaxis  = list(title = "Frequency")
+    , legend = list(title=list(text =  "<b> Aisle </b>"))
+  )
+```
