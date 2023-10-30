@@ -1,0 +1,13 @@
+---
+title: "Zhuodiao Kuang"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+
+```{r, out.width="900\\linewidth", out.height="900\\linewidth",include=TRUE, fig.align="center", fig.cap=c("My CV"), echo=FALSE}
+knitr::include_graphics("./CV.pdf")
+```
