@@ -2,7 +2,7 @@
 title: "Hello, World!"
 ---
 
-... and welcome to my personal website! Here you can find an HTML iteration of my [résumé](resume.html), though feel free to use the envelope icon in the navigation bar to shoot me an email and request a PDF copy. I am also always happy to chat about mathematics, Florence + the Machine, and any and all cheeses, so don't hesitate to drop a line!
+... and welcome to my personal website! Here you can find an HTML iteration of my [résumé](resume.html), though feel free to use the envelope icon in the navigation bar to shoot me an email and request a PDF copy.
 
 You can also find a [dashboard](dashboard.html) highlighting some data from _The Instacart Online Grocery Shopping Dataset_ (2017), an anonymized dataset with over three million online grocery orders from more than 200,000 Instacart users. The data are not randomized, however, so be careful not to generalize to broader populations! All the visualizations you'll see are mostly for fun.
 
