@@ -6,8 +6,243 @@ output:
     toc_float: true
 ---
 
+***
+## Education
+***
+
+__Biostatistics, Master of Science__ [__New York, NY__]{style="float:right"}\
+_Columbia University_ [_2023 – Present_]{style="float:right"}
+
+__Statistics, Bachelor of Science__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China_ [_2019 – 2023_]{style="float:right"}
+
+__Data Science, Bachelor of Science__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China_ [_2019 – 2023_]{style="float:right"}
 
 
-```{r, out.width="900\\linewidth", out.height="900\\linewidth",include=TRUE, fig.align="center", fig.cap=c("My CV"), echo=FALSE}
-knitr::include_graphics("./CV.pdf")
-```
+***
+## Publications
+***
+
+
+
+1) Zhuodiao Kuang, "[Transfer Learning in Brain Tumor Detection: From AlexNet to Hyb-DCNN-ResNet](documents/p1.pdf)," _Conference Proceedings Citation Index(CPCI) & China National Knowledge Infrastructure(CNKI) & 2022 International Conference on Software, Data Processing and Information Technology(SDPIT 2022, ISSN:2791-0210)_ 
+
+2) Wei Zhao, Zhuodiao Kuang, The Effect of Directors’ and Officers’ Liability Insurance on the Quality of Qualitative Disclosures, Accepted by: EAFC 2022 in _《Accounting and Finance》_（R&R for SSCI, ISSN:1467-629x）
+
+
+
+
+***
+## Professional Experience
+***
+
+
+
+__Teaching Assistant__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China, Department of Statistics_ [_2022 – 2023_]{style="float:right"}\
+
+* Instructed a weekly, hour-long recitation for three semesters of regression analysis and statistical computing
+* Conducted weekly office hours to provide students with assistance in a one-on-one environment
+* Led review sessions before exams to provide students with every opportunity to succeed
+
+__Tutor for Statistics__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China, Center for Applied Statistics_ [_2022-2023_]{style="float:right"}\
+
+* Tutored groups and individual undergraduates in all required courses of statistics
+*	Led weekly discussions with students to review homework assignments and recitation problems
+*	Designed personalized lesson plans to suit individual student needs and streamline group sessions
+
+***
+## Researches
+***
+
+__Evaluation of Undergraduate Education of Renmin University of China in 10 years__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China_ [_11/2022-05/2023_]{style="float:right"}\
+                                                       
+*Commissioned by Academic Records and Registration Office*
+
+*	Set research goals and apply for private datasets of Renmin University
+*	Build models to evaluate the relationship between multiple aspects and students' academic performance
+*	Demonstrate the results with graphs using R and Python
+
+
+__Kernel Knockoffs selection in time series analysis__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China, Center for Applied Statistics_ [_09/2022-12/2022_]{style="float:right"}\
+                      
+*Supervisor: Prof. Wangli Xu, Dean of Biostatistics Department, Center for Applied Statistics of Renmin University of China*
+
+*	Reviewed methematical theories about nonparametric tests and relevant source code
+*	Compared the computing effiency of C++, Rcpp and R  
+*	Learnt basic commands of Rcpp(Armadillo) and practise building various functions
+*	Rewrote all basic nonparametric tests in Rcpp and try to upload the R package
+*	Wrote a paper and upload on the CRAN
+
+__The Effect of Directors’ and Officers’ Liability Insurance on the Quality of Qualitative Disclosures__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China_ [_03/2022-07/2022_]{style="float:right"}\
+
+*Leader: Dr. Wei Zhao, Accounting Department of Commercial College, Renmin University of China*
+
+*Skills: Scraping data with Python, Sorting data with Python and Excel, MongoDB*
+
+*	Read papers about the effect of directors’ and officers’ liability insurance
+*	Help design and revise TONE’s function 
+*	Got textual and numerical data from websites
+
+
+__Transfer Learning in Brain Tumor Detection: From AlexNet to Hyb-DCNN-ResNet__ [__online__]{style="float:right"}\
+_Data Science and Big Data Analytics Online Research Seminar_ [_02/2022-05/2022_]{style="float:right"}\
+                 
+*Supervisor: Prof. Mark Vofelsberger, Massachusetts Institute of Technology (MIT)*
+
+*Skills: Data Retrieval, Statistics, Databases, Machine Learning, Data Visualization, Data Mining, Data Exploration, Natural Language Processing, and Paralleled Computing Techniques*
+
+*	Read papers about transfer learning in automatically detecting brain tumor in magnetic resonance imaging
+*	Set up the environment and preprocess the data of brain tumor detection, and presented the CNN model with data augmentation and model performance 
+*	Displayed the Natural Language Processing (NLP) and implementation parts with statistical graphs and flow charts
+*	Wrote the paper and made the presentation 
+
+__Flexible semiparametric forecasting models for time series__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China_ [_11/2021-1/2022_]{style="float:right"}\
+                                             
+*Supervisor: Prof. Cunjie Lin, Center for Applied Statistics of Renmin University of China*
+
+*Skills: Rcpp,Rmarkdown,Armadillo*
+
+*	Read papers about semiparametric forecasting models and autoregression for time series
+*	Compared the efficiency of predicting with different R packages and pairs of parameters
+*	Designed new models with penalised variables when the dimension of parameters adding up
+
+__Research on Spatio-temporal Coupling and Differentiation Relationship between the Central and Local Governments under the Outbreak of COVID-19 Situation in China__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China_ [_05/2020-05/2021_]{style="float:right"}\
+
+
+                  
+*Supported by 2020 Renmin University of China Undergraduate Scientific Research Fund*
+*Supervisor: Prof. Yanyun Zhao & Hanfang Yang, Renmin University of China*
+
+**Team Leader of Three Members**
+
+*	Crawled data from texts provided by governments and extracted keywords through text word frequency analysis
+*	Classified keywords into five parts based on keywords and their numbers that were included in governments’ policies 
+*	Made fitting prediction by Analysis of Time Series (GARCH, ARIMAX, Granger, X13)
+*	Analyzed government’s attitude, changes in the financial market, and the epidemic situation in the COVID-19 background
+*	Realized the visualization of each provincial government’s attitude and epidemic situation by R and Python
+*	Wrote the paper
+
+***
+## Shadowing
+***
+
+__Pyramid Pooling Module-Based Semi-Siamese Network: A Benchmark Model for Assessing Building Damage from xBD Satellite Imagery Datasets__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China_ [_11/2020-12/2020_]{style="float:right"}\
+                                                      
+*Supervisor: Prof. Yanbing Bai, Renmin University of China*
+
+*	Achieved the function of evaluating damages caused by earthquakes
+*	Collected and analyzed data and then wrote the paper 
+__Technical Solution Discussion for Key Challenges of Operational Convolutional Neural Network-Based Building-Damage Assessment from Satellite Imagery: Perspective from Benchmark xBD Dataset__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China_ [_09/2020-10/2020_]{style="float:right"}\
+
+	                                       
+*Supervisor: Prof. Hanfang Yang, Renmin University of China*
+
+*	Helped Achieve the function of evaluating damages caused by earthquakes
+*	Collected and analyzed data and then wrote the paper
+*	Got Acquainted with Technology of Image Recognition and Basic Knowledge of Convolutional Neural Network
+
+
+
+
+***
+## Selected Coursework
+***
+
+__Biostatistics, Master of Science__ [__New York, NY__]{style="float:right"}\
+_Columbia University_ [_2023 – Present_]{style="float:right"}
+
+*	Survival Analysis
+*	Biostatistical Methods
+* Principles of epidemiology
+* Data Science
+
+__Statistics, Bachelor of Science__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China_ [_2019 – 2023_]{style="float:right"}
+
+* Higher Algebra
+* Mathematical Analysis
+* Probability Theory
+* Real Analysis
+* Sampling Techniques
+* Stochastic Processes
+* Regression Analysis
+* Statistical Computing
+* Applied Time Series Analysis
+* Experimental Design
+* Nonparametric Statistics
+* Optimization
+
+__Data Science, Bachelor of Science__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China_ [_2019 – 2023_]{style="float:right"}
+
+* Introductory Programming
+* Database Systems
+* Machine Learning
+* Foundation of Data Science
+* Computer Algorithm and Programming Design
+* Application of Statistical Software
+* Data Science Practice
+
+
+
+
+__Data Science, Non-degree Coursework__ [__Concentration GPA: A__]{style="float:right"}\
+_University College London_ [_07/2021 – 08/2021_]{style="float:right"}\
+
+Successful completion of a first year undergraduate level module in statistics. Students 
+who have not used the R software for statistical analysis will be asked to complete a free introductory online course (approximately 10 hours), prior to the start of the module.
+
+***
+## Technical Skills
+***
+
+__Operating Systems__\
+Windows* | Unix
+
+__Programming and Scripting__\
+R(inluding Armadilo)* | SAS | MATLAB | C++ | Python | PHP | MongoDB 
+
+__Data Manipulation and Processing__\
+R* | Excel | SAS | SQL | MongoDB 
+
+__Output and Visualization__\
+R* | Word* | LaTeX | Python
+
+\* Denotes preferred language for given skill.
+
+***
+## Extracurricular Activities
+***
+
+__Student in Charge Of General Affairs & Class President__  [__Beijing, China__]{style="float:right"}\
+_Renmin University of China, Center for Applied Statistics_ [_09/2021-06/2023_]{style="float:right"}\              
+*	Designed questionnaires to investigate difficulties that students encounter and try to help them solve those problems
+*	Delivered information about campus living to students, such as telephone-fraud
+*	Collected information to provide convenience to students, such as intern opportunities
+*	Reminded students of taking nucleic acid tests in time
+
+__Member of Living Rights and Interest Department, Students’ Union__ [__Beijing, China__]{style="float:right"}\
+_Renmin University of China, Center for Applied Statistics_ [_09/2019-09/2020_]{style="float:right"}\     
+*	Inspected sanitation of students’ dormitory and safety utilization of electric power
+
+__Member of Social Investigation__  [__Beijing, China__]{style="float:right"}\
+_Renmin University of China, Center for Applied Statistics_ [_01/2021-11/2021_]{style="float:right"}\                                    
+*	Investigated the reason, process, and current situation of Beijing 798 Art Zone which transformed itself from an industrial park to an art zone   
+
+
+__Participant, United Nations International Children's Emergency Fund (UNICEF) in China__   [__Beijing, China__]{style="float:right"}\
+_Renmin University of China, Center for Applied Statistics_ [_02/2022-11/2022_]{style="float:right"}\                                                            
+*	Made donations to the UNICEF for children 
+
+
+

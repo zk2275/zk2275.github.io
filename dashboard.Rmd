@@ -1,8 +1,11 @@
 ---
-title: "dashboard"
+title: "Dashboard From Instacart Data"
 author: "Zhuodiao Kuang"
 date: "`r Sys.Date()`"
-output: html_document
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
 ```{r setup, include=TRUE}
