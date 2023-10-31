@@ -1,0 +1,19 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About Me"
+      href: about.html
+    - text: "Résumé"
+      href: resume.html
+    - text: "Dashboard"
+      href: dashboard.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<zk2275@cumc.columbia.edu>
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/zhuodiao-kuang-a0623828a/
+    - icon: fa-github fa-lg
+      href: https://github.com/jimmymkelliher
+output:
+  html_document
